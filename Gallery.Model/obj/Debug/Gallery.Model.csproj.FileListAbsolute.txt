@@ -1,0 +1,7 @@
+C:\Users\gerson.garcia\documents\visual studio 2015\Projects\Gallery\Gallery.Model\bin\Debug\Gallery.Model.dll
+C:\Users\gerson.garcia\documents\visual studio 2015\Projects\Gallery\Gallery.Model\bin\Debug\Gallery.Model.pdb
+C:\Users\gerson.garcia\documents\visual studio 2015\Projects\Gallery\Gallery.Model\bin\Debug\Gallery.Domain.dll
+C:\Users\gerson.garcia\documents\visual studio 2015\Projects\Gallery\Gallery.Model\bin\Debug\Gallery.Domain.pdb
+C:\Users\gerson.garcia\documents\visual studio 2015\Projects\Gallery\Gallery.Model\obj\Debug\Gallery.Model.csprojResolveAssemblyReference.cache
+C:\Users\gerson.garcia\documents\visual studio 2015\Projects\Gallery\Gallery.Model\obj\Debug\Gallery.Model.dll
+C:\Users\gerson.garcia\documents\visual studio 2015\Projects\Gallery\Gallery.Model\obj\Debug\Gallery.Model.pdb
