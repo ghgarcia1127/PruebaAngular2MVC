@@ -7,7 +7,7 @@
     public class Painting
     {
         [DataMember]
-        public Guid Id { get; set; }
+        public long Id { get; set; }
 
         [DataMember]
         public string Name { get; set; }

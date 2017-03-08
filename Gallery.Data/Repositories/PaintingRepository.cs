@@ -46,7 +46,7 @@
             unitOfWork.Commit();
         }
 
-        public void Delete(Guid id)
+        public void Delete(long id)
         {
             Delete(this.FindById(id));
         }
@@ -56,12 +56,12 @@
             this.unitOfWork.Dispose();
         }
 
-        public Painting FindById(Guid id)
+        public Painting FindById(long id)
         {
             return unitOfWork.GetSet<Painting>().Find(id);
         }
 
-        public async Task<Painting> FindByIdAsync(Guid id)
+        public async Task<Painting> FindByIdAsync(long id)
         {
             return await unitOfWork.GetSet<Painting>().FindAsync(id);
         }
@@ -76,7 +76,7 @@
             return await unitOfWork.GetSet<Painting>().OrderBy(p => p.Name).ToListAsync();
         }
 
-        public async Task<IEnumerable<Painting>> GetByCollectionAsync(Guid collectionId)
+        public async Task<IEnumerable<Painting>> GetByCollectionAsync(long collectionId)
         {
             return await unitOfWork.GetSet<Painting>().Where(P => P.Collection_Id.Equals(collectionId)).ToListAsync();
         }

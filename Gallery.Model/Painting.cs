@@ -17,7 +17,7 @@ namespace Gallery.Model
 
         public decimal Total_in_Vault { get; set; }
 
-        public Guid Collection_Id { get; set; }
+        public long Collection_Id { get; set; }
 
         public virtual Collection Collection { get; set; }
     }

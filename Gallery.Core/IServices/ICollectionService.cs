@@ -15,8 +15,8 @@ namespace Gallery.Core.IServices
 
         void Add(Collection entity);
 
-        void Delete(Guid id);
+        void Delete(long id);
 
-        Collection FindById(Guid id);
+        Collection FindById(long id);
     }
 }

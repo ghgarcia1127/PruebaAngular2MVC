@@ -46,7 +46,7 @@ namespace Gallery.Data.Repositories
             unitOfWork.Commit();
         }
 
-        public void Delete(Guid id)
+        public void Delete(long id)
         {
             Delete(this.FindById(id));
         }
@@ -56,12 +56,12 @@ namespace Gallery.Data.Repositories
             this.unitOfWork.Dispose();
         }
 
-        public Collection FindById(Guid id)
+        public Collection FindById(long id)
         {
             return unitOfWork.GetSet<Collection>().Find(id);
         }
 
-        public async Task<Collection> FindByIdAsync(Guid id)
+        public async Task<Collection> FindByIdAsync(long id)
         {
             return await unitOfWork.GetSet<Collection>().FindAsync(id);
         }

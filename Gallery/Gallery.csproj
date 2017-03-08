@@ -10,7 +10,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{FC781567-BE05-4681-94C7-BBACE29FD4EE}</ProjectGuid>
+    <ProjectGuid>{7D58490C-422B-4D21-9027-6C0B0ACCC629}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -217,7 +217,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApiControllers\CollectionController.cs" />
+    <Compile Include="ApiControllers\CollectionsController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
@@ -238,17 +238,27 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Angular2Readme-IMPORTANT.txt" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="index-JustForReference-DeleteIt.html" />
+    <Content Include="Scripts\App\app.component.html" />
+    <Content Include="Scripts\App\app.component.js" />
+    <Content Include="Scripts\App\app.module.js" />
+    <Content Include="Scripts\App\main.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Scripts\App\main.js.map" />
+    <Content Include="Scripts\App\app.module.js.map" />
+    <Content Include="Scripts\App\app.component.js.map" />
+    <Content Include="package.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -261,6 +271,7 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="systemjs.config.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -295,12 +306,9 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Collections\Create.cshtml" />
-    <Content Include="Views\Collections\Delete.cshtml" />
-    <Content Include="Views\Collections\Details.cshtml" />
-    <Content Include="Views\Collections\Edit.cshtml" />
+    <Content Include="typings.json" />
+    <Content Include="tsconfig.json" />
     <Content Include="Views\Collections\Index.cshtml" />
-    <Content Include="Scripts\systemjs.config.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -319,9 +327,22 @@
       <Name>Gallery.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\Gallery.Dtos\Gallery.Dtos.csproj">
-      <Project>{7A67601F-C37C-4F97-930F-7E78D17F3157}</Project>
+      <Project>{7a67601f-c37c-4f97-930f-7e78d17f3157}</Project>
       <Name>Gallery.Dtos</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\App\app.component.ts" />
+    <TypeScriptCompile Include="Scripts\App\app.module.ts" />
+    <TypeScriptCompile Include="Scripts\App\app.routing.ts" />
+    <TypeScriptCompile Include="Scripts\App\Collections\collections.module.ts" />
+    <TypeScriptCompile Include="Scripts\App\Collections\collections.routing.ts" />
+    <TypeScriptCompile Include="Scripts\App\Collections\Components\list.component.ts" />
+    <TypeScriptCompile Include="Scripts\App\Collections\Models\collection.model.ts" />
+    <TypeScriptCompile Include="Scripts\App\Collections\Services\collection.service.ts" />
+    <TypeScriptCompile Include="Scripts\App\Collections\Services\icollection.service.ts" />
+    <TypeScriptCompile Include="Scripts\App\main.ts" />
+    <TypeScriptCompile Include="Scripts\App\rxjs-extensions.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
@@ -343,7 +364,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>56455</DevelopmentServerPort>
+          <DevelopmentServerPort>50031</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:52791/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

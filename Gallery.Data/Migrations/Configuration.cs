@@ -2,9 +2,7 @@ namespace Gallery.Data.Migrations
 {
     using Model;
     using System;
-    using System.Data.Entity;
     using System.Data.Entity.Migrations;
-    using System.Linq;
 
     internal sealed class Configuration : DbMigrationsConfiguration<Gallery.Data.GalleryContext>
     {
@@ -29,12 +27,11 @@ namespace Gallery.Data.Migrations
             //
             SetCollections(context);
         }
-
         private void SetCollections(GalleryContext context)
         {
             context.GetSet<Collection>().AddOrUpdate(C => C.Id,
-                new Collection { Id = Guid.NewGuid(), Name = "Paisagismo", Date = new DateTime(2017,02,28) },
-                new Collection { Id = Guid.NewGuid(), Name = "Bodegon", Date = new DateTime(2017, 02, 28) });
+                new Collection { Id = 1, Name = "Paisagismo", Date = new DateTime(2017, 02, 28) },
+                new Collection { Id = 2, Name = "Bodegon", Date = new DateTime(2017, 02, 28) });
         }
     }
 }

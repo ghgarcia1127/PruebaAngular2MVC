@@ -53,9 +53,9 @@
     <Compile Include="Configurations\PaintingConfiguration.cs" />
     <Compile Include="GalleryContext.cs" />
     <Compile Include="IUnitOfWork.cs" />
-    <Compile Include="Migrations\201702282109488_InitialMigration.cs" />
-    <Compile Include="Migrations\201702282109488_InitialMigration.Designer.cs">
-      <DependentUpon>201702282109488_InitialMigration.cs</DependentUpon>
+    <Compile Include="Migrations\201703081938470_InitialMigration.cs" />
+    <Compile Include="Migrations\201703081938470_InitialMigration.Designer.cs">
+      <DependentUpon>201703081938470_InitialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -77,8 +77,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201702282109488_InitialMigration.resx">
-      <DependentUpon>201702282109488_InitialMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201703081938470_InitialMigration.resx">
+      <DependentUpon>201703081938470_InitialMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

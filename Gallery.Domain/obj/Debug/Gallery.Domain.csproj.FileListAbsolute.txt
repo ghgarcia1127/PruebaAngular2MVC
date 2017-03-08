@@ -2,3 +2,4 @@ C:\Users\gerson.garcia\documents\visual studio 2015\Projects\Gallery\Gallery.Dom
 C:\Users\gerson.garcia\documents\visual studio 2015\Projects\Gallery\Gallery.Domain\bin\Debug\Gallery.Domain.pdb
 C:\Users\gerson.garcia\documents\visual studio 2015\Projects\Gallery\Gallery.Domain\obj\Debug\Gallery.Domain.dll
 C:\Users\gerson.garcia\documents\visual studio 2015\Projects\Gallery\Gallery.Domain\obj\Debug\Gallery.Domain.pdb
+C:\Users\gerson.garcia\documents\visual studio 2015\Projects\Gallery\Gallery.Domain\obj\Debug\Gallery.Domain.csprojResolveAssemblyReference.cache

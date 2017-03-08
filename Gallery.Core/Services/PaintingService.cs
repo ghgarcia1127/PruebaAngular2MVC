@@ -27,12 +27,12 @@
             repository.Add(AutoMapper.Mapper.Map<Model.Painting>(entity));
         }
 
-        public void Delete(Guid id)
+        public void Delete(long id)
         {
             repository.Delete(id);
         }
 
-        public Painting FindById(Guid id)
+        public Painting FindById(long id)
         {
             return AutoMapper.Mapper.Map<Painting>((repository.FindById(id)));
         }
@@ -47,7 +47,7 @@
             return from painting in await repository.GetAllAsync() select AutoMapper.Mapper.Map<Painting>(painting);
         }
 
-        public async Task<IEnumerable<Painting>> GetByCollectionAsync(Guid CollectionId)
+        public async Task<IEnumerable<Painting>> GetByCollectionAsync(long CollectionId)
         {
             return from painting in await repository.GetByCollectionAsync(CollectionId)
                    select AutoMapper.Mapper.Map<Painting>(painting);

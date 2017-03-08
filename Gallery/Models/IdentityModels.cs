@@ -29,7 +29,5 @@ namespace Gallery.Models
         {
             return new ApplicationDbContext();
         }
-
-        public System.Data.Entity.DbSet<Gallery.Dtos.Collection> Collections { get; set; }
     }
 }

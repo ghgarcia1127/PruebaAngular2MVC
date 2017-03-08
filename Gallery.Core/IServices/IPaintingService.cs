@@ -13,12 +13,12 @@ namespace Gallery.Core.IServices
 
         Task<IEnumerable<Painting>> GetAllAsync();
 
-        Task<IEnumerable<Painting>> GetByCollectionAsync(Guid CollectionId);
+        Task<IEnumerable<Painting>> GetByCollectionAsync(long CollectionId);
 
         void Add(Painting entity);
 
-        void Delete(Guid id);
+        void Delete(long id);
 
-        Painting FindById(Guid id);
+        Painting FindById(long id);
     }
 }

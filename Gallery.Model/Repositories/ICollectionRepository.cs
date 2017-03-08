@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Gallery.Model.Repositories
 {
-    public interface ICollectionRepository : IRepository<Guid, Collection>
+    public interface ICollectionRepository : IRepository<long, Collection>
     {
     }
 }

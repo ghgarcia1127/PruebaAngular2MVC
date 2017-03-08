@@ -25,18 +25,16 @@ namespace Gallery.Core.Services
         #region ICollectionService Members
         public void Add(Collection entity)
         {
-            if(entity.Id== Guid.Empty)
-                entity.Id = Guid.NewGuid();
 
             repository.Add(AutoMapper.Mapper.Map<Model.Collection>(entity));
         }
 
-        public void Delete(Guid id)
+        public void Delete(long id)
         {
             repository.Delete(id);
         }
 
-        public Collection FindById(Guid id)
+        public Collection FindById(long id)
         {
             return AutoMapper.Mapper.Map<Collection>(repository.FindById(id));
         }
